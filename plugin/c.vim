@@ -2786,9 +2786,9 @@ function! C_RereadTemplates ( msg )
 				" try to create a local template directory
 				if exists("*mkdir")
 					try 
-						call mkdir( s:C_LocalTemplateDir, "p" )
+						"call mkdir( s:C_LocalTemplateDir, "p" )
 						" write a default local template file
-						call writefile( template, s:C_LocalTemplateFile )
+						"call writefile( template, s:C_LocalTemplateFile )
 					catch /.*/
 					endtry
 				endif
